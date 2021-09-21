@@ -32,6 +32,8 @@ class CreateQuickBooksTokensTable extends Migration
                   ->references('id')
                   ->on('users')
                   ->onDelete('cascade');
+
+            $table->foreignId('company_id')->nullable()->constrained('companies');
         });
     }
 

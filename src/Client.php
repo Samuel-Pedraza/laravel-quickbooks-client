@@ -269,7 +269,7 @@ class Client
             'baseUrl'      => $this->configs['data_service']['base_url'],
             'ClientID'     => $this->configs['data_service']['client_id'],
             'ClientSecret' => $this->configs['data_service']['client_secret'],
-            'RedirectURI'  => route('quickbooks.token'),
+            'RedirectURI'  => route('quickbooks.tokenconnection'),
             'scope'        => $this->configs['data_service']['scope'],
         ];
     }
